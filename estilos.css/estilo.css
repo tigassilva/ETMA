@@ -1,0 +1,153 @@
+:root{
+    --cor-secundaria: rgb(54, 81, 54)
+}
+
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    color: white;
+}
+
+body{
+  
+    background-image: url("/Imagens/Logo\ etma.jpg") ;
+    background-repeat: no-repeat;
+    background-size: 100vw 200vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.material-symbols-outlined{
+  
+  padding: 0.5em 1em;
+   
+}
+.cabecalho__lista{
+    
+    direction: none;
+    margin-left: 1em;   
+    width: 30%;
+    border-radius: 16px;
+    background-color: rgb(54, 81, 54);
+    
+}
+
+.cabecalho__lista__item{
+    padding: 1em;
+
+}
+
+.cabecalho__lista__link{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+   
+}
+
+.cabecalho__lista__link:active{
+    font-size: 1.3em;
+   
+}
+
+/*---------------------------------------------------------------------------*/
+
+.principal{
+    width: 60vw;    
+    margin: 20%;
+    font-size: 0.8em;
+
+    
+    
+}
+.card-img{
+    
+    box-sizing: border-box;
+    width: 60vw ;
+    height: 30vh;
+    border-radius: 16px;
+    font-size: 2em;
+
+    
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5em;
+    border: 0.4em solid white;
+    width: 100%;
+    border-radius: 16px;
+    background: var(--cor-secundaria);
+}
+.card__maquinas{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 0.5em;
+    text-align: end;
+    box-sizing: border-box;
+    border-bottom: 0.0063em solid;
+    padding-bottom: 0.5em;
+
+}
+
+.card__descricao__titulo{
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+
+}
+
+.card__descricao{
+    display: flex;
+    flex-direction: column;   
+    gap: 0.5em;
+    border-bottom: 0.0063em solid;
+    padding: 0.5em;
+}
+.card__botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+   
+}
+
+.botoes{
+    border: 0.063em solid white;
+    padding: 0.5em;
+    border-radius: 16px;
+    background-color: silver;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--cor-secundaria);
+}
+
+.botoes:active{
+    background-color: black;
+    color: white;
+}
+.card__endereco{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.card__frete{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+#valor__frete{
+    width: 30%;
+}
+
+.card__cep{
+    width: 40%;
+}
