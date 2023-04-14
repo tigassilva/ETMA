@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" type="text/css" href="/estilos.css/reset.css">
     <link rel="stylesheet" type="text/css" href="/estilos.css/estilo.css">    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    
+    
     
     <title>ETMA</title>
 </head>
@@ -16,43 +18,139 @@
         <span class="material-symbols-outlined" id="menu">
             menu
         </span>
-        <ul class="cabecalho__lista" id="lista">
-            <li class="cabecalho__lista__item"> Categorias:</li>
-            <li class="cabecalho__lista__item"><a href="#" class="cabecalho__lista__link"> Vendas </a></li>
-            <li class="cabecalho__lista__item"><a href="index.html" class="cabecalho__lista__link">Home</a>  </li>
+        <ul class="cabecalho__lista" >
+            <li class="cabecalho__lista__item">
+                <img src="/Imagens/home.png" class="material-symbols-sharp">                    
+                </img>
+                <a href="index.html" class="cabecalho__lista__link"> 
+                    Home
+                </a>
+            </li>
+            <li class="cabecalho__lista__item">
+                <img src="/Imagens/pessoa.png" class="material-symbols-sharp">
+                    
+                </img>
+                <a href="#" class="cabecalho__lista__link"> 
+                    Perfil 
+
+                </a>
+            </li>
+            <li class="cabecalho__lista__item">
+                <img src="/Imagens/vebd.png" class="material-symbols-sharp">                   
+                </img>
+                <a href="#" class="cabecalho__lista__link">
+                     Vendas 
+                </a>
+            </li>
+            <li class="cabecalho__lista__item">
+                <img src="/Imagens/alugueis_001.png" class="material-symbols-sharp">
+                    
+                </img>
+                <a href="alugueis.html" class="cabecalho__lista__link"> 
+                    Aluguéis
+                </a>  
+            </li>
+            <li class="cabecalho__lista__item">
+                <img src="/Imagens/servicos.png" class="material-symbols-sharp">
+                    
+                </img>
+                <a href="alugueis.html" class="cabecalho__lista__link"> 
+                    Serviços
+                </a>  
+            </li>
+            <li class="cabecalho__lista__item">
+                <img  src="/Imagens/anuncio.png" class="material-symbols-sharp">                   
+                
+                <a href="alugueis.html" class="cabecalho__lista__link"> 
+                    Anúncios
+                </a>  
+            </li>
         </ul>
     </header> 
+    
     <main class="principal">
-        <section class="card">
-            <div class="card__maquinas">
-                <img class="card-img" src="/Imagens/maquina_agricola.jpg">
-                <h2 class="card__descricao__titulo">Valor Aluguel: xxxx</h2>
-                <div class="card__endereco">
-                    <p class="card__cep__descricao">Digite seu CEP</p>
-                    <span > = </span>   
-                    <input class="card__cep" id="cep" placeholder="0000-00">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="swiper-img">
+                            <img src="/Imagens/trator.jpg">
+                        </div>
+                        <div class="swiper-descricao">
+                            <h2 class="descricao-titulo">Aluguel</h2> 
+                            <p>R$ 15.000,00</p>                           
+                            <p>Trator SMK F200</p>
+                            <h2 class="descricao-titulo">Poprietário</h2>
+                            <p>José Salustiano</p>
+                            <h2 class="descricao-titulo">Localização:</h2>
+                            <p>BR-445, Londrina-PR</p>
+                            <a class="botao botao-link" href="/saiba mais.html">Saiba Mais</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card__frete">                
-                    <button class="botao__frete" id="calc">Calcular Frete</button>
-                    <span > = </span> <input id="valor__frete" type="text" placeholder=" R$ 0000,00" disabled="">
-                </div>
+                
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="swiper-img">
+                            <img src="/Imagens/trator.jpg">
+                        </div>
+                        <div class="swiper-descricao">
+                            <h2 class="descricao-titulo">Aluguel</h2> 
+                            <p>R$ 15.000,00</p>                           
+                            <p>Trator SMK F200</p>
+                            <h2 class="descricao-titulo">Poprietário</h2>
+                            <p>José Salustiano</p>
+                            <h2 class="descricao-titulo">Localização:</h2>
+                            <p>BR-445, Londrina-PR</p>
+                            <a class="botao botao-link" href="/saiba mais.html">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="swiper-img">
+                            <img src="/Imagens/trator.jpg">
+                        </div>
+                        <div class="swiper-descricao">
+                            <h2 class="descricao-titulo">Aluguel</h2> 
+                            <p>R$ 15.000,00</p>                           
+                            <p>Trator SMK F200</p>
+                            <h2 class="descricao-titulo">Poprietário</h2>
+                            <p>José Salustiano</p>
+                            <h2 class="descricao-titulo">Localização:</h2>
+                            <p>BR-445, Londrina-PR</p>
+                            <a class="botao botao-link" href="/saiba mais.html">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>               
+             
+              </div>
             </div>
-            <div class="card__descricao">
-                <h2 class="card__descricao__titulo">Propetário:</h2>
-                <P>Nome: Fulano de Tal</P>
-                <p> contato: 43 99880 0000</p>            
-            </div>
-            <div class="card__botoes">
-                <h3><a href="#" class="botoes" id="botoes">Calendario</a></h3>
-                <h3><a href="#" class="botoes" id="botoes">Alugar</a></h3>
-            </div>
-        </section>
+            <div class="swiper-pagination"></div>
+          </div>
+      
+      
+            
+
+
+         
     </main>  
    
         
 
        
-    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+           var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        slidesPerView: 1.5,
+        navigation: {
+          nextEl: '.next',
+          prevEl: '.prev',
+        },
+      });
+    </script>
    <script src="/JS/script.js"></script>
 </body>
 </html>
